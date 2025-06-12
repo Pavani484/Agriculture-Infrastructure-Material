@@ -137,25 +137,26 @@ const AgricultureApp = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50">
-      <div className="container mx-auto px-4 py-8">
+    <div className="min-h-screen bg-gradient-to-br from-emerald-100 via-teal-50 to-cyan-100">
+      <div className="absolute inset-0 bg-gradient-to-r from-green-400/20 via-blue-500/20 to-purple-600/20"></div>
+      <div className="relative z-10 container mx-auto px-4 py-8">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-foreground mb-4">
+          <h1 className="text-5xl font-bold bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 bg-clip-text text-transparent mb-4">
             Agricultural Infrastructure Materials
           </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-gray-700 max-w-2xl mx-auto font-medium">
             Find all the essential materials and equipment needed for modern agricultural infrastructure
           </p>
         </div>
 
         <div className="mb-8 space-y-4">
           <div className="relative max-w-md mx-auto">
-            <Search className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
+            <Search className="absolute left-3 top-3 h-4 w-4 text-emerald-600" />
             <Input
               placeholder="Search materials..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="pl-10"
+              className="pl-10 border-2 border-emerald-300 focus:border-emerald-500 bg-white/90 backdrop-blur-sm"
             />
           </div>
           
@@ -178,9 +179,11 @@ const AgricultureApp = () => {
 
         {filteredMaterials.length === 0 && (
           <div className="text-center py-12">
-            <p className="text-muted-foreground text-lg">
-              No materials found matching your criteria.
-            </p>
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 max-w-md mx-auto border border-gray-200 shadow-lg">
+              <p className="text-gray-600 text-lg">
+                No materials found matching your criteria.
+              </p>
+            </div>
           </div>
         )}
 
