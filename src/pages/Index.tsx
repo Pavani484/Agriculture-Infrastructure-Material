@@ -1,8 +1,8 @@
 
-import WeatherApp from "@/components/WeatherApp";
+import AgricultureApp from "@/components/AgricultureApp";
 
 const Index = () => {
-  return <WeatherApp />;
+  return <AgricultureApp />;
 };
 
 export default Index;
