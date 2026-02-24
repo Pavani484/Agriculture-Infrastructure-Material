@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/5d77c284-a568-4c28-b218-5452f7cdea9f
+**URL**: https://cloud-kissed-forecast-buddy.lovable.app/
 
 ## How can I edit this code?
 
